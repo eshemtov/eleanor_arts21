@@ -1,0 +1,156 @@
+body {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 25px;
+	background-color: rgb(87,114,146);
+	color: rgb(243,255,255,1);
+	font-family: 'cadiz-body';
+	font-size: 24px;
+	font-weight: 600;
+}
+
+@font-face {
+  font-family:'cadiz-headers';
+  src: url("cadiz-web/CadizTrialWeb-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'cadiz-body';
+  src: url("cadiz-web/CadizTrialWeb-Regular.woff") format("woff");
+}
+
+.header {
+	width: 400px;
+}
+
+.website-title {
+	width: 250px;
+	position: sticky;
+}
+
+.header-secondary-page {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.span-1 {
+	font-size: 36px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 250px;
+	color: rgb(235,226,255,1);
+}
+
+.page-titles{
+	position: absolute;
+	width: 562px;
+	height: 185px;
+	left: 44px;
+	top: 158px;
+}
+
+.menu {
+	position: absolute;
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	left: 1150px;
+	top: 50px;
+}
+
+
+.menu-hover {
+	border: none;
+	font-size: 24px;
+	font-family: 'cadiz-body';
+	text-decoration: underline;
+	color: rgb(243,255,255,1);
+	background-color: rgb(87,114,146);
+}
+
+.menu-dropdown {
+	display: none;
+	position: absolute;
+	min-width: 400px;
+	z-index: 1;
+	background-color: rgb(87,114,146)
+}
+
+.menu-dropdown a {
+	color: rgb(243,255,255,1);
+	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+}
+
+.link-page {
+	font-size: 24px;
+}
+.link-page:hover {
+	text-decoration: underline;
+	color: rgb(235,226,255,1);
+}
+
+.menu:hover .menu-dropdown {display: block;}
+
+
+.menu:hover .menu-hover {color: rgb(235,226,255,1);}
+
+.home-illustration {
+	position: relative;
+	width: 120%;
+	left:22%;
+	z-index: -1;
+}
+
+.bar-pitti {
+	position: relative;
+	width: 60%;
+	left: 40%;
+	z-index: -1;
+
+}
+.quotes-left {
+	width: 50%;
+}
+
+.quotes-right {
+	width: 50%;
+	padding-left: 50%;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+a:link {
+  color: rgb(243,255,255,1);
+}
+
+a:visited {
+	color: rgb(243,255,255,1);
+}
+
+a:hover {
+	color: rgb(235,226,255,1);
+}
+
+a:active {
+  color: rgb(235,226,255,1);
+}
