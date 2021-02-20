@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shrikhand&display=swap');
+@import url("https://use.typekit.net/ubn1lyd.css");
+
+body {
+  	min-height: 100vh;
+	background: url("bridge.svg"), linear-gradient(180deg, rgba(255,221,198,1) 0%, rgba(255,244,178,1) 40%, rgba(145,212,255,1) 100%);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center, bottom;
+	padding: 30px 30px 30px 30px;
+}
+
+h1{
+	font-family: 'Bebas Neue', serif;
+	font-size: 100px;
+	letter-spacing: 5px;
+}
+
+.left-aligned:hover {
+	color: rgba(145,212,255,1)
+}
+
+.right-aligned:hover {
+	color: rgba(145,212,255,1)
+}
+
+.arrows:hover {
+	-webkit-transform: translate(100px, 0px);
+	transform: translate(100px, 0px);
+	transition: all 2s ease-in-out;
+}
+
+.icon {
+	padding: 50px;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.left-aligned {
+	text-align: left;
+	align-items: center;
+	display: flex;
+	cursor: pointer;
+}
+
+.right-aligned {
+	margin-top: 70px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.train {
+	position: relative;
+	right: 1000px;
+	top: 85px;
+	cursor: url('medical-mask.png'), pointer;
+}
+
+.train:hover {
+	transition: all 1s ease;
+	-webkit-transform: translate(1200px, 0px);
+	transform: translate(1200px, 0px);
+}
