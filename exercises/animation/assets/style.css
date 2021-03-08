@@ -1,0 +1,117 @@
+* { box-sizing: border-box }
+
+body {
+background-color: rgb(235, 213, 19);
+padding-top: 20px;
+padding-bottom: 20px;
+cursor: url('oval.png'), pointer;
+}
+
+.shapes {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+@keyframes translate-one {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  	transform: translate(20.5em, 0);
+  }
+  100% {
+  	opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes translate-two {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  	transform: translate(-20.5em, 0);
+  }
+  100% {
+  	opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes translate-three {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  	transform: translate(0, -30em);
+  }
+  100% {
+  	opacity: 1;
+    transform: none;
+  }
+}
+
+.cls-1, .cls-2 {
+	-webkit-transition: 1s ease-in-out;
+	animation: translate-one 3s ease-in-out infinite 2s;
+}
+
+.cls-1:hover {
+	fill: #A6D785;
+	animation-play-state: paused;
+}
+
+.cls-2:hover {
+	fill: #3F6826;
+	animation-play-state: paused;
+}
+
+.cls-3:hover {
+	fill: #C0D9AF;
+}
+
+.cls-4:hover {
+	fill: #7CCD7C;
+}
+
+.cls-5:hover {
+	fill: #7CCD7C;
+}
+
+.cls-6:hover {
+	fill: #C0D9AF;
+}
+
+.cls-7, .cls-8 {
+	animation: translate-two 3s ease-in-out infinite 2s;
+}
+
+.cls-7:hover {
+	fill: #3F6826;
+	animation-play-state: paused;
+}
+
+.cls-8:hover {
+	fill: #A6D785;
+	animation-play-state: paused;
+}
+
+.cls-10 {
+	animation: translate-three 3s ease-in-out infinite 2s;
+}
+
+.cls-9:hover {
+	fill: #7CCD7C;
+}
+
+.cls-10:hover {
+	fill: #4D6B50;
+	animation-play-state: paused;
+}
