@@ -1,0 +1,94 @@
+body {
+background-color: rgb(227, 227, 227);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.shapes {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.shapes {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+@keyframes translate-one {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  	transform: translate(20.5em, 0);
+  }
+  100% {
+  	opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes translate-two {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  	transform: translate(-20.5em, 0);
+  }
+  100% {
+  	opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes translate-three {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0;
+  	transform: translate(0, -30em);
+  }
+  100% {
+  	opacity: 1;
+    transform: none;
+  }
+}
+
+.cls-1, .cls-2 {
+	-webkit-transition: 1s ease-in-out;
+	animation: translate-one 3s ease-in-out infinite 2s;
+}
+
+.cls-1:hover {
+	animation-play-state: paused;
+}
+
+.cls-2:hover {
+	animation-play-state: paused;
+}
+
+.cls-7, .cls-8 {
+	animation: translate-two 3s ease-in-out infinite 2s;
+}
+
+.cls-7:hover {
+	animation-play-state: paused;
+}
+
+.cls-8:hover {
+	animation-play-state: paused;
+}
+
+.cls-10 {
+	animation: translate-three 3s ease-in-out infinite 2s;
+}
+
+.cls-10:hover {
+	animation-play-state: paused;
+}
