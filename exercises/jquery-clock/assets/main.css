@@ -1,0 +1,32 @@
+body {
+	padding: 100px;
+	background-color: #000545;
+}
+
+.clock-part {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 21px 25px 0 0 #ffd12b;
+  margin: auto;
+}
+
+#hour {
+	width: 500px;
+	height: 500px;
+	border-radius: 60%;
+	box-shadow: 30px 10px 0 0 #ffd12b;
+	float: left;
+}
+
+#minute {
+	float: right;
+}
+
+#second {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 #ffd12b;
+	float: right;
+}
