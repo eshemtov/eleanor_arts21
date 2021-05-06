@@ -1,0 +1,212 @@
+body {
+	padding: 10px 20px 20px 20px;
+	background-color: rgb(87,114,146);
+	color: rgb(243,255,255,1);
+	font-family: 'cadiz-body', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family:'cadiz-headers';
+	src: url('cadiz-web/CadizTrialWeb-SemiBold.woff2') format('woff2'),
+	url('cadiz-web/CadizTrialWeb-SemiBold.woff') format('woff');  
+}
+
+@font-face {
+	font-family: 'cadiz-body';
+	src: url('cadiz-web/CadizTrialWeb-Regular.woff2') format('woff2'),
+	url('cadiz-web/CadizTrialWeb-Regular.woff') format('woff');  
+}
+
+@font-face {
+	font-family: 'cadiz-italic';
+	src: url('cadiz-web/CadizTrialWeb-RegularItalic.woff2') format('woff'),
+	url('cadiz-web/CadizTrialWeb-RegularItalic.woff') format('woff');
+}
+
+h1 {
+	font-size: 36px;
+	font-family: 'cadiz-body';
+}
+
+p {
+	padding: 0px;
+}
+
+.secondary-page-title {
+	font-size: 36px;
+	color: rgb(235,226,255,1);
+	text-align: center;
+	margin-left: -225px;
+}
+
+.paragraph{
+	position: absolute;
+	width: 600px;
+	left: 30px;
+	top: 158px;
+}
+
+.italic {
+	font-family: 'cadiz-italic', sans-serif;
+}
+
+.intro {
+	font-size: 18px;
+	font-family: 'cadiz-body', sans-serif;
+	color: rgb(243,255,255,1);
+	text-align: left;
+	width: 80%;
+	line-height: 1.4;
+	padding: 10px 20px 10px 20px;
+	margin-top: 30px;
+	letter-spacing: 0.2px;
+	border: 1px solid rgb(235,226,255,1);
+	border-radius: 30px;
+	
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 0px 0px 0px;
+}
+
+.iframe-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px 20px 0px;
+	margin: 0px 20px 0px 20px;
+}
+
+.iframe-wrapper-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px 20px 0px;
+}
+
+.menu {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+
+.menu-hover {
+	font-size: 24px;
+	font-family: 'cadiz-body', sans-serif;
+	text-decoration: underline;
+	color: rgb(243,255,255,1);
+	background-color: rgb(87,114,146);
+}
+
+.menu-dropdown {
+	display: none;
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	right: 0;
+	z-index: 1;
+	background-color: rgb(87,114,146)
+}
+
+.menu-dropdown a {
+	color: rgb(243,255,255,1);
+	margin: 0px 12px 0px 12px;
+	text-decoration: none;
+	display: block;
+}
+
+.link-page {
+	font-size: 24px;
+}
+.link-page:hover {
+	text-decoration: underline;
+	color: rgb(235,226,255,1);
+}
+
+.menu:hover .menu-dropdown {
+	display: block;
+}
+
+.menu:hover .menu-hover {
+	color: rgb(235,226,255,1);
+}
+
+.home-illustration {
+	text-align: right;
+	margin-left: 375px;
+	width: 80%;
+	z-index: -1;
+}
+
+.pizza-illustration {
+	float: right;
+	width: 60%;
+	margin: -325px -50px 0px 0px;
+	z-index: -1;
+}
+
+.background {
+	background-image: url('bar-pitti.png')
+}
+.bar-pitti {
+	text-align: center;
+	width: 100%;
+}
+.quotes-left {
+	max-width: 48%;
+	padding: 0px 0px 20px 0px;
+}
+
+.quotes-right {
+}
+
+.row {
+	padding: 0px 0px 20px 0px;
+}
+.column {
+	float: left;
+	width: 30%;
+	margin: 20px 20px 30px 20px;
+	padding-bottom: 20px;
+}
+
+.column-1 {
+	margin-top: 20px;
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+a:link {
+	color: rgb(243,255,255,1);
+	text-decoration: none;
+	padding: 0px 0px 0px 0px;
+}
+
+a:visited {
+	color: rgb(243,255,255,1);
+}
+
+a:hover {
+	color: rgb(235,226,255,1);
+}
+
+a:active {
+	color: rgb(235,226,255,1);
+}
